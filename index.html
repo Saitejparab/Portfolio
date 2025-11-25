@@ -71,6 +71,11 @@
         .bg-black {
             background-color: #000000 !important;
         }
+        /* Specific style for CV text lists */
+        .cv-list {
+            list-style-type: '⚡️';
+            padding-left: 1.5em;
+        }
     </style>
 </head>
 <body class="bg-dark text-light font-inter">
@@ -78,7 +83,7 @@
     <header class="container py-5 text-center">
         <h1 class="display-3 fw-bold mb-1 font-monospace text-accent">SAITEJ BABU PARAB</h1>
         <p class="lead text-secondary mb-4">
-            A motivated MCA candidate and <strong>full-stack web development</strong> enthusiast.
+            A motivated MCA candidate and <strong>full-stack web development</strong> enthusiast, eager to apply robust problem-solving abilities and technical skills.
         </p>
 
         <div class="d-flex justify-content-center gap-3">
@@ -104,7 +109,88 @@
     </section>
     
     <hr class="border-secondary mx-auto w-75">
+    
+    <section class="container py-5">
+        <h2 class="text-center mb-4 text-accent">Experience & Education Timeline</h2>
+        <div class="accordion accordion-flush" id="experienceAccordion">
 
+            <div class="accordion-item bg-dark text-light border-secondary">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-dark text-light font-monospace" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExperience">
+                        Professional Experience (4 Roles)
+                    </button>
+                </h2>
+                <div id="collapseExperience" class="accordion-collapse collapse" data-bs-parent="#experienceAccordion">
+                    <div class="accordion-body bg-dark-secondary">
+                        
+                        <h5 class="text-info">IT Support Executive Apprentice | GSIDC LTD | Panaji, Goa (Jul 2023 – Jul 2024)</h5>
+                        <ul class="cv-list text-secondary">
+                            <li>Provided comprehensive technical support for hardware, software, and network systems.</li>
+                        </ul>
+                        
+                        <h5 class="text-info mt-3">Jr. Web Developer | Eightyfive Technologies | Goa (Sept 2021 – Oct 2021)</h5>
+                        <ul class="cv-list text-secondary">
+                            <li>Contributed to front-end development using HTML, CSS, AJAX, jQuery, and JavaScript.</li>
+                            <li>Implemented responsive web pages for 1 client project, resulting in improved mobile accessibility.</li>
+                        </ul>
+
+                        <h5 class="text-info mt-3">Backend Developer Intern | Eightyfive Technologies | Goa (Aug 2021 – Sept 2021)</h5>
+                        <ul class="cv-list text-secondary">
+                            <li>Developed and maintained server-side logic for web applications using PHP.</li>
+                            <li>Managed and queried databases using MySQL to support application functionality.</li>
+                        </ul>
+                        
+                        <h5 class="text-info mt-3">Web Development Intern | ASK Systems | Goa (Feb 2021 – June 2021)</h5>
+                        <ul class="cv-list text-secondary">
+                            <li>Designed and developed client websites from the ground up using HTML, CSS, and JavaScript.</li>
+                            <li>Utilized the Bootstrap framework to create fully responsive and mobile-first web pages.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item bg-dark text-light border-secondary">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-dark text-light font-monospace" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEducation">
+                        Academic Background
+                    </button>
+                </h2>
+                <div id="collapseEducation" class="accordion-collapse collapse" data-bs-parent="#experienceAccordion">
+                    <div class="accordion-body bg-dark-secondary">
+                        <h5 class="text-success">Master of Computer Applications (MCA) | 2024 – Present</h5>
+                        <p class="mb-1 text-secondary">Progressive Education Society's Modern Institute of Business Studies, Nigdi, Pune</p>
+                        
+                        <h5 class="text-success mt-3">Bachelor of Computer Applications (BCA) | 2020 – 2023</h5>
+                        <p class="mb-1 text-secondary">SV’s Sridora Caculo College of Commerce and Management Studies, Goa (CGPA: 8.4)</p>
+                        
+                        <h5 class="text-success mt-3">HSC-Science (PCM) | 2018 – 2020</h5>
+                        <p class="mb-1 text-secondary">Purushottam Walawalkar Higher Secondary School, Mapusa Bardez-Goa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h3 class="text-warning">Certifications & Agile Training</h3>
+                <p class="text-secondary"><strong>Agile Fundamentals:</strong> Completed training on Agile methodologies, covering the Agile Manifesto, Scrum framework, and product management strategies for iterative software delivery.</p>
+            </div>
+            <div class="col-md-6">
+                <h3 class="text-warning">Key Professional Skills</h3>
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge bg-danger">Problem-Solving</span>
+                    <span class="badge bg-danger">Time Management</span>
+                    <span class="badge bg-danger">Team Leadership</span>
+                    <span class="badge bg-danger">Event Organization</span>
+                    <span class="badge bg-danger">Multitasking</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <hr class="border-secondary mx-auto w-75">
+    
     <section class="container py-5">
         <h2 class="text-center mb-5 text-accent">Core Full-Stack & Data Projects</h2>
         <div class="row g-4">
@@ -113,7 +199,7 @@
                 <div class="card h-100 bg-dark-secondary border-primary shadow-lg">
                     <div class="card-body">
                         <h5 class="card-title font-monospace text-success">Intelligent Movie Recommendation System</h5>
-                        <p class="card-text text-secondary">An end-to-end engine built with **Python** and **Streamlit**. Utilizes **Scikit-Learn** for vectorization and **Cosine Similarity** algorithms.</p>
+                        <p class="card-text text-secondary">An end-to-end engine built with **Python** and **Streamlit**. Utilizes **Scikit-Learn** for vectorization and **Cosine Similarity** algorithms on 5,000+ movies.</p>
                         <span class="badge bg-primary">Python | Streamlit | Scikit-Learn</span>
                     </div>
                     <div class="card-footer bg-transparent border-top-0 pt-0">
@@ -143,7 +229,7 @@
                 <div class="card h-100 bg-dark-secondary border-warning shadow-lg">
                     <div class="card-body">
                         <h5 class="card-title font-monospace text-warning">Pet Adoption System</h5>
-                        <p class="card-text text-secondary">A **PHP**-based platform for connecting adopters with pets, using **MySQL** and a responsive front-end.</p>
+                        <p class="card-text text-secondary">A **PHP**-based platform for connecting adopters with pets, using **MySQL** and a responsive front-end. Allows users to browse and submit adoption applications.</p>
                         <span class="badge bg-primary">PHP | MySQL | HTML/CSS</span>
                     </div>
                     <div class="card-footer bg-transparent border-top-0 pt-0">
